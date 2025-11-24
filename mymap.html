@@ -18,9 +18,9 @@
 <div id="mapid" style="width: 600px; height: 400px; position: relative;"></div>
 <script>
 var mymap = L.map('mapid').setView([0, 0]).setZoom(1);
-</script>
-<h2>Embedded YouTube Video</h2>
+L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(mymap);
 
-<iframe width="560" height="315" src="https://youtu.be/JF1ObzC6J3U?si=8a5JD_pP7JdVXgV_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</script>
 </body>
 </html>
+
